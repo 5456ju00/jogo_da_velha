@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="board" data-board><!--essa classe container irá conter-->
-        <div class="cell" data-cell></div><!--1ª célula filho do board-->
-        <div class="cell" data-cell></div><!--2ª célula filho do board-->
-        <div class="cell" data-cell></div><!--3ª célula filho do board-->
-        <div class="cell" data-cell></div><!--4ª célula filho do board-->
-        <div class="cell" data-cell></div><!--4ª célula filho do board-->
-        <div class="cell" data-cell></div><!--4ª célula filho do board-->
-        <div class="cell" data-cell></div><!--5ª célula filho do board-->
-        <div class="cell" data-cell></div><!--6ª célula filho do board-->
-        <div class="cell" data-cell></div><!--7ª célula filho do board-->
-        <div class="cell" data-cell></div><!--8ª célula filho do board-->
-        <div class="cell" data-cell></div><!--9ª célula filho do board-->
-
-
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="board" data-board> <!--essa classe contanier irá conter as 9 células-->
+            <div class="cell" data-cell><!--1ª célula filho do board--></div>
+            <div class="cell" data-cell><!--2ª célula filho do board--></div>
+            <div class="cell" data-cell><!--3ª célula filho do board--></div>
+            <div class="cell" data-cell><!--4ª célula filho do board--></div>
+            <div class="cell" data-cell><!--5ª célula filho do board--></div>
+            <div class="cell" data-cell><!--6ª célula filho do board--></div>
+            <div class="cell" data-cell><!--7ª célula filho do board--></div>
+            <div class="cell" data-cell><!--8ª célula filho do board--></div>
+            <div class="cell" data-cell><!--9ª célula filho do board--></div>
+        </div>
+        <div class="winning-message" data-winning-message>
+            <p class="winning-message-text" data-winning-message-text></p>
+            <button class="winning-message-button" data-restart-button>Reiniciar</button>
+        </div>
     </div>
-
-    <div class="winnig-message" data-winnig-massage>
-        <p class="winnig-message-text" data-winnig-massage-text> X Venceu </p>
-        
-
-
-
-
-    </div>
-
-    
+    <script src="script/js"></script>
 </body>
 </html>
-
-
-
