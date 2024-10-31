@@ -4,7 +4,16 @@
    margin: 0;
    padding: 0;
    }
-   
+
+   /*
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+
    body{ 
         height: 100vh;
         width: 100vw;
@@ -84,7 +93,14 @@
 
 /* X */ 
 .cell.x::before,
-.cell.x::after, /* essas duas primeiras linhas de comando é pra criar a perninha do X "antes e depois" */
+.cell.x::after {
+    content:"";
+    height: calc(100px * 0.15);
+    width: calc(100px * 0.9);
+    background: white;
+    position: absolute;
+    border-radius: 50% /* irá deixar no formato de círculo */
+} /* essas duas primeiras linhas de comando é pra criar a perninha do X "antes e depois" */
 
 .board.x .cell:not(.x):not(.circle):hover::after,        /* quero apagar todas as células da board x, */
 .board.x .cell:not(.x):not(.circle):hover::before {       /* que não tenha a classe x e nem a classe circle, e nas células que estão vazias*/
