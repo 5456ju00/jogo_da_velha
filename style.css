@@ -34,8 +34,14 @@
        align-items: center;
        grid-template-columns: repeat(3, auto ); /* criar 3 colunas e AUTO = largura - auto -vai ocupar a largura que o conteúdo precisadentrio da célula */
    }
-   
-   
+
+   /* Deixar a cor cinza claro o X e o CIRCLE e não escuro */
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before {
+   background: rgba(255, 255, 255, o.3) !important;
+}
    /*Célula */
    .cell{
        width: 100px;
@@ -134,4 +140,20 @@
     border-radius: 50% /* irá deixar no formato de círculo */
 }
 
+/* Serve para informar que já tem um X e um Círculo selecionado dentro da célula, não irá permitir seja clicado com mouse */
+.cell.X, .cell.circle{
+    cursor: not-allowed;
+}
 
+
+/* Mensagem de Vitória */
+.winning-message{
+     display: flex;
+    position: fixed;
+    top: 0;
+    bottom: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    flex-direction: column;
+}
