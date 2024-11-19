@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Jogo da Velha</h1>
-        <div class="board x"> <!--essa classe contanier irá conter as 9 células-->
-            <div class="cell x" data-cell><!--1ª célula filho do board--></div>
-            <div class="cell circle" data-cell><!--2ª célula filho do board--></div>
+        <div class="board" data-board> <!--essa classe contanier irá conter as 9 células-->
+            <div class="cell" data-cell><!--1ª célula filho do board--></div>
+            <div class="cell" data-cell><!--2ª célula filho do board--></div>
             <div class="cell" data-cell><!--3ª célula filho do board--></div>
             <div class="cell" data-cell><!--4ª célula filho do board--></div>
             <div class="cell" data-cell><!--5ª célula filho do board--></div>
@@ -21,10 +19,9 @@
             <div class="cell" data-cell><!--9ª célula filho do board--></div>
         </div>
         <div class="winning-message" data-winning-message>
-            <p class="winning-message-text" data-winning-message-text></p>
+            <p class="winning-message-text" data-winning-message-text> X Venceu! </p>
             <button class="winning-message-button" data-restart-button>Reiniciar</button>
         </div>
-    </div>
-    <script src="script/js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
